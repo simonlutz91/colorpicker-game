@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232323;
+  text-align: center;
+}
+
+.title {
+  font-size: 45px;
+  background-color: #5388fa;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 20%;
+}
+
+.square {
+width: 25%;
+height: 25vh;
+margin: 1rem 1rem;
+background-color: purple;
+border-radius: 15px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.playbar {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(83, 136, 250);
+  background-color: white;
+  height: 36px;
+}
+
+#easy {
+  transition: all .7s ease;
+  margin-right: 50px;
+}
+
+#hard {
+  transition: all .7s ease;
+}
+
+#playbutton {
+  transition: all .5s ease;
+  
+}
+
+#message {
+  width: 160px;
+  margin: 0 150px;
+}
+
+
+
+.hov:hover {
+  background-color: rgb(83, 136, 250);
+  color:white;
+}
+
+
+.clicked {
+  background-color: rgb(83, 136, 250);
+  color:white;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 2rem 10%;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .playbar {
+    font-size: 12px;
+  }
+
+  #message {
+    margin: 0 50px;
+  }
+
+  .title {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .square {
+    height: 15vh;
+    margin: .5rem .5rem;
+  }
+}
+
